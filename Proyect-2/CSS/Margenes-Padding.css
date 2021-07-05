@@ -1,0 +1,14 @@
+h1{
+    background: #DA0037;
+   /* margin-left: 100px;
+    margin-bottom: 250px;*/
+    margin: 100px;
+    margin-left: 400px;
+    margin-right: 1120px;
+}
+
+p{
+    color: white;
+    background: #444444;
+    padding: 100px;
+}
