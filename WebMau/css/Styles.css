@@ -1,11 +1,16 @@
 *{
-    margin:10px;
-    padding: 10px;
+    margin: 0px;   
+
     box-sizing: border-box;
+    font-size: 40px;
+    text-align:left;
+    font-family: 'Rubik', sans-serif;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;}
+a{
+    text-decoration: none;
 }
 .padre{
     display: flex;
@@ -13,61 +18,107 @@ body{
 }
 
     .header{
-        background: #222831;
+        background: url(/WebMau/images/photo-1624359136353-f60129a367b9.jpg);
+        background-attachment: center;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
+        
 
     }
 
         .menu{
-            background: #293B5F;
+            margin: 7px;
+            background-color: transparent;
+            padding: auto;
             display: flex;
             flex-flow: row nowrap;
-            height: 100px;
+            height: auto;
             align-items: center;
-
+            border: 4px solid black;
         }   
 
             .logo{
-                background: #EEEEEE;
+                font-family: 'Rubik', sans-serif;
+                background-color: transparent;
                 flex: 1 1 auto;
-                height: 60px;
+                text-align: center;
             }
+                .logo a{
+                    color: black;
+                    font-size: 45px;
+                    
+                }
+                .logo a:hover{
+                    color: #334257;
+                }
             .nav{
-                background: #EEEEEE;
-                flex: 5 1 auto;
-                height: 60px;
+                font-family: 'Rubik', sans-serif;
+                background-color: transparent;
+                flex: 10 10 auto;
+                text-align: right;
+                margin: 3px;
             }
-            .social{
-                background: #EEEEEE;
-                flex: 1 1 auto;
-                height: 60px;
-            }
+                .nav a{
+                    color: #334257;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
 
-            .texto-principal{
-                background: #548CA8;
+                .nav a:hover{
+                    color: #5F939A;
+                }
+
+            .social{
+                background-color: transparent;
+                color: black;
+                flex: 1 1 auto;
+                text-align: center;
             }
-            h1{
-                background: #EEEEEE;
-                height: 50px;
-            }
+                .social a{
+                    color: #334257;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    padding: 0 10px; 
+                }
+                .social a:hover{
+                    color:#5F939A;
+                }
+
+        .texto-principal{
+          
+            display: flex;
+            margin: 70%;
+
+            
+        }
+        
+        h1{
+            margin: 5%;
+            padding: 50%;
+            text-align: center;
+            height: auto;
+            font-size: 18px;
+            padding: 128px;
+        }
 
     .section{
-        background: #222831;
-        display: flex;
+        background: url(/WebMau/images/photo-1624359136353-f60129a367b9.jpg);
+        flex-flow: column nowrap;
+
 
     }
         .articulos{
-            background:#293B5F;
-            flex: 2 1 auto;
+            background-color: transparent;
+            flex: 1 1 auto;
             display: flex;
             flex-flow: row wrap;
 
         }
             .articulo{
-                background:#548CA8 ;
-                flex: 1 1 40%;
-                height: 50px;
+                background-color: transparent ;
+                flex: 1 1 50%;
+                height: 60px;
             }
 
             .navegacion{
@@ -76,31 +127,24 @@ body{
                 height: 35px;
             }
 
-        .aside{
-            background:#293B5F ;
-            flex: 1 1 auto;
-        }    
-
-            .publicidad{
-                background: #548CA8;
-                height: 50px;
-            }
-
-
+       
 
     .footer{
-        background: #222831;
+        background: url(/WebMau/images/photo-1624359136353-f60129a367b9.jpg);
         display: flex;
-        justify-content: center;
-
-        /*flex-flow: column nowrap;*/
+        justify-content: left;
+        color: black;
+        font-size: 10px;
+        margin: 0px;
+        
     }
         .pie{
-            background: #548CA8;
-            justify-content: center;
+            font-size: 30px;
+            background-color: transparent;
+            color: black;
             height: 50px;
-            width: 300px;
-            
+            padding: 10px;
+           
         }
 
 @media all and (max-width:900px){
@@ -111,10 +155,7 @@ body{
         flex-direction: column;
         height: auto;
     }
-    .aside{
-        display: flex;
-        justify-content: center ;
-    }
+    
 }
 @media all and (max-width:730px){
 
@@ -125,8 +166,4 @@ body{
     
 }
 
-@media all and (max-width:414px){
-    .aside{
-        flex-direction: column;
-    }
-}
+
